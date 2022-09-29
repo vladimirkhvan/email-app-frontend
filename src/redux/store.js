@@ -1,11 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import mail from './mail/slice';
-import user from './user.slice';
+import user from './user/slice.js';
 
 export const store = configureStore({
     reducer: {
-        mail,
         user,
     },
 });
