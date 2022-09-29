@@ -1,4 +1,51 @@
 @import './scss/normalize';
 @import './scss/variables';
 
+body {
+    background: #b0b7e0;
+    background-size: cover;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 500px) {
+        align-items: flex-start;
+    }
+
+    .button {
+        width: 193px;
+        height: 52px;
+        background: $accent;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 16px;
+
+        font-weight: 500;
+        font-size: 16px;
+        color: #f5f7fb;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+
+        cursor: pointer;
+
+        transition: box-shadow 0.08s ease-in-out, transform 0.1s ease-in-out;
+
+        &:hover {
+            box-shadow: rgba(50, 50, 93, 0.2) 0px 13px 27px -5px,
+                rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
+            transform: translateY(-3px);
+        }
+
+        &:active {
+            transform: translateY(-3px);
+            box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 6px 0px inset,
+                rgba(0, 0, 0, 0.05) -3px -3px 6px 1px inset,
+                rgba(50, 50, 93, 0.2) 0px 13px 27px -5px, rgba(0, 0, 0, 0.25) 0px 8px 16px -8px;
+        }
+    }
+}
