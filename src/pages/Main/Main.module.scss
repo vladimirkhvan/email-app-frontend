@@ -1,0 +1,9 @@
+.mainFrame{
+    display: flex;
+    padding: 20px;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
