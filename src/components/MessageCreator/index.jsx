@@ -25,11 +25,6 @@ export const MessageCreator = () => {
             receiver: message.receiver,
             sender: username,
         });
-        setMessage({
-            receiver: '',
-            body: '',
-            topic: '',
-        });
     };
 
     return (
