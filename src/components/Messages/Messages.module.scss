@@ -1,0 +1,41 @@
+@import '../../scss/variables';
+
+.messages {
+    width: 500px;
+    margin-right: 50px;
+    scroll-behavior: auto;
+    overflow-y: scroll;   
+    background-color: white;
+    height: 500px;
+
+    @media screen and (max-width: 900px) {
+        margin-right: 0;
+        margin-top: 60px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+.header {
+    button {
+        font-family: $heading-font;
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+.message {
+    font-weight: 600;
+}
+
+.sender {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.createdAt {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.6;
+}
