@@ -13,7 +13,7 @@ const fetchUsers = (username, setter, navigate) => {
             if (username === '') {
                 navigate('/');
             }
-            const { data } = await axios.get('http://localhost:8800/' + username);
+            const { data } = await axios.get('https://khvan-mailapp.herokuapp.com/' + username);
             setter(data.messages);
         })();
     } catch (err) {

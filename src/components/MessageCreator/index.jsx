@@ -19,7 +19,7 @@ export const MessageCreator = () => {
     };
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8800/', {
+        axios.post('https://khvan-mailapp.herokuapp.com/', {
             topic: message.topic,
             message: message.body,
             receiver: message.receiver,
